@@ -1,6 +1,6 @@
 # Add JRE to the base ubuntu image
 
-FROM ubuntu-nodoc
+FROM pallet/ubuntu-nodoc
 MAINTAINER Hugo Duncan <hugo@palletops.com>
 
 # Add JRE
