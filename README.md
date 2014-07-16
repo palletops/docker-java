@@ -1,11 +1,11 @@
 # docker-java
 
 Source for automated builds of a docker image containing a headless
-JVM runtime on ubuntu.
+JVM runtime on busybox.
 
 Available as
-[pallet/java][https://registry.hub.docker.com/u/pallet/java/] from the
-docker hub repository.
+[pallet/java:busybox-latest](https://registry.hub.docker.com/u/pallet/java/)
+from the docker hub repository.
 
 ## License
 
