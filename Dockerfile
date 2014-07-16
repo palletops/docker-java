@@ -1,10 +1,7 @@
-# Add JRE to the base ubuntu image
+# Add JRE to the base busybox image
 
-FROM pallet/ubuntu-nodoc
+FROM busybox:ubuntu-14.04
 MAINTAINER Hugo Duncan <hugo@palletops.com>
 
-# Add JRE
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends openjdk-7-jre-headless
-RUN apt-get -y autoremove
-RUN apt-get -y autoclean
-RUN apt-get -y clean
+ADD install_jre.sh install_jre.sh
+RUN ["/bin/sh", "install_jre.sh"]
